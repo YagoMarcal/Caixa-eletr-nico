@@ -15,20 +15,24 @@ Simular o funcionamento básico de um caixa eletrônico: o usuário informa o va
 
 ## 🛠️ Tecnologias
 
-- Linguagem **C**
+<div data-importer="techs" align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="35" alt="c logo"  />
+  <img width="12" />
+</div>
+<br>
 - Compilador GCC (ou qualquer compilador C compatível)
 
 ##  Como executar
 
 1. Clone o repositório:
-   ```bash
+   bash
    git clone https://github.com/YagoMarcal/Caixa-eletr-nico.git
    cd Caixa-eletr-nico
-   ```
-2. Compile o código (ajuste o nome do arquivo `.c` se for diferente):
-   ```bash
+   
+2. Compile o código (ajuste o nome do arquivo .c se for diferente):
+   bash
    gcc main.c -o caixa
-   ```
+
 3. Execute:
    bash
    ./caixa
