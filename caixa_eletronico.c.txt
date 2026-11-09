@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+int main() {
+    int saque;
+    int saldo = 1000;
+    int notas;
+
+    printf("Digite o valor do saque: ");
+    scanf("%d", &saque);
+
+    if (saque % 5 != 0) {
+        printf("Erro: o valor do saque deve ser multiplo de 5.\n");
+    }
+    else if (saque > saldo) {
+        printf("Erro: saldo insuficiente.\n");
+    }
+    else {
+        printf("Notas entregues:\n");
+
+        notas = saque / 100;
+        if (notas > 0) {
+            printf("%d nota(s) de 100\n", notas);
+            saque = saque % 100;
+        }
+
+        notas = saque / 50;
+        if (notas > 0) {
+            printf("%d nota(s) de 50\n", notas);
+            saque = saque % 50;
+        }
+
+        notas = saque / 20;
+        if (notas > 0) {
+            printf("%d nota(s) de 20\n", notas);
+            saque = saque % 20;
+        }
+
+        notas = saque / 10;
+        if (notas > 0) {
+            printf("%d nota(s) de 10\n", notas);
+            saque = saque % 10;
+        }
+
+        notas = saque / 5;
+        if (notas > 0) {
+            printf("%d nota(s) de 5\n", notas);
+        }
+    }
+
+    return 0;
+}
